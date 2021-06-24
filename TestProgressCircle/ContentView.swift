@@ -31,10 +31,10 @@ struct ContentView: View {
                 .stroke(Color.blue, style: StrokeStyle(lineWidth: 13, lineCap: .round))
                 .rotationEffect(.degrees(-90))
         }
-        .padding()
+        .padding(30)
         .onTapGesture {
             withAnimation {
-                progress = min(1.0, progress + 0.25)
+                progress = min(1.0, progress + 0.125)
             }
         }
     }
